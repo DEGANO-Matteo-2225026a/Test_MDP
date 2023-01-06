@@ -46,6 +46,8 @@ vUInt genNbPremiers (const unsigned & n) {
         if (tab[i] == 0) continue;
         tab[posAInserer] = tab[i];
         posAInserer += 1;
+//      if (tab[i] < 100) cout << tab[i];
+//      else break;
     }
     tab.resize(posAInserer);
     return tab;
